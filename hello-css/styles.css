@@ -15,3 +15,13 @@ h2 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
 }
+
+ul{
+  list-style-type:square;
+  list-style-image: url(../links-and-images/images/mochi.svg);
+}
+
+ol {
+  list-style-type: lower-roman;
+  list-style-image: url(../links-and-images/images/mochi.svg);
+}
