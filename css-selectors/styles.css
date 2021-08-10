@@ -21,6 +21,10 @@
   margin: 20px auto;
 }
 
+/*
+It’s adding a new font-style declaration to the original .button rule.
+It’s overriding an existing background-color style from .button.
+ */
 .call-to-action {
   font-style: italic;
   background-color: #EEB75A;    /* Yellow */
