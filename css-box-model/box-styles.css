@@ -1,3 +1,15 @@
+/* override default styles to a predictable value using the
+“universal” CSS selector (*). This selector matches every HTML element,
+effectively resetting the margin and padding properties for our web page.
+We also converted all our boxes to border-box, which, again,
+is a best practice.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
 }
