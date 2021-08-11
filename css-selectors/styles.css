@@ -45,6 +45,6 @@ a:hover {
   color: aqua;
   text-decoration: underline;
 }
-a:active {
+a:visited:active {
   color: red;
 }
