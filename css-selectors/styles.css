@@ -3,7 +3,12 @@
   margin: 0 auto;
 }
 
-p:first-of-type {
+/* p:first-of-type selects the first <p> in every container element.
+The child combinator (>) is placed between two CSS selectors.
+It matches only those elements matched by the second selector that are
+the direct children of elements matched by the first.
+*/
+.page > p:first-of-type {
   color: #7E8184; /* Light gray */
   font-style: italic;
 }
