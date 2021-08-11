@@ -56,6 +56,10 @@ p:last-of-type {
   background-color: #5995DA;  /* Blue */
 }
 
+#button-2 {
+  background-color: #D55C5F;    /* Red */
+}
+
 /*
 It’s adding a new font-style declaration to the original .button rule.
 It’s overriding an existing background-color style from .button.
@@ -75,6 +79,8 @@ It’s overriding an existing background-color style from .button.
 .call-to-action:visited:active {
   background-color: #EEB75A;     /* Yellow */
 }
+
+
 
 #button-2 {
   color: #5D6063 /* Dark gray */
