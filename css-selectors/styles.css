@@ -19,6 +19,7 @@
 
   color: #FFF;
   background-color: #5995DA;    /* Blue */
+
   font-weight: bold;
   padding: 20px;
   text-align: center;
@@ -45,9 +46,20 @@
 It’s adding a new font-style declaration to the original .button rule.
 It’s overriding an existing background-color style from .button.
  */
-.call-to-action {
+.call-to-action:link,
+.call-to-action:visited {
   font-style: italic;
   background-color: #EEB75A;    /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
 }
 
 a:link {
