@@ -13,6 +13,14 @@ have it actually render
 .page {
   width: 900px;
   margin: 0 auto;
+}
+
+/*
+we need the overflow: hidden line to force the .container to pay attention
+ to the height of the floated elements. Without it, we wouldn’t see our
+ background color because .container would have zero height.
+ */
+.container {
   overflow:hidden;
   background-color: #EAEDF0;
 }
