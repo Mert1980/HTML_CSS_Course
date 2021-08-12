@@ -49,7 +49,7 @@ we need the overflow: hidden line to force the .container to pay attention
   background-color: #D6E9FE;    /* Light blue */
 }
 
-.column {
+.footer-item {
   float: left;
   width: 31%;
   margin: 20px 1.15%;
