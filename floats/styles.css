@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .menu {
   height: 100px;
   background-color: #B2D6FF;    /* Medium blue */
@@ -22,8 +27,6 @@
 }
 
 .footer {
-  margin: 0 auto;
-  width: 400px;
   height: 200px;
   background-color: #D6E9FE;    /* Light blue */
 }
