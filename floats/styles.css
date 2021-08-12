@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+/*
+By adding an overflow: hidden declaration to a container div,
+we’re telling it to recognize the height of any floated elements it contains.
+This is how we can add a background color to our .page element and
+have it actually render
+*/
 .page {
   width: 900px;
   margin: 0 auto;
-  border: 1px solid red;
+  overflow:hidden;
+  background-color: #EAEDF0;
 }
 
 .menu {
