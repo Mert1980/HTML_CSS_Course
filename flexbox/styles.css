@@ -18,9 +18,14 @@
   justify-content: space-around;
 }
 
-.links {
-  display: flex;
-  justify-content: space-around;
+/*
+Auto-margins eat up all the extra space in a flex container, so instead of
+distributing items equally, this moves the .signup and any following items (.login)
+to the right side of the container. This will give you the exact same layout we
+had before, but without that extra nested <div> to group them.
+*/
+.signup {
+  margin-left: auto;
 }
 
 .login {
