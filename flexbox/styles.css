@@ -89,6 +89,18 @@
   flex:1;
 }
 
+/*
+Without that flex: initial; line, the flex: 1; declaration would be inherited
+from the .footer-item rule, causing the width properties to be ignored. initial
+fixes this, and we get a flexible layout that also contains fixed-width items.
+ */
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
 .footer-three {
   flex: 2;
 }
