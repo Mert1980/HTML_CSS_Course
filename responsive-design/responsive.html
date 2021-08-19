@@ -15,9 +15,17 @@
         <img src='images/header.svg'/>
       </div>
 
+<!-- The srcset attribute points to a list of alternative image files, along with
+properties defining when the browser should use each of them. The 1x tells the
+browser to display illustration-small.png on standard-resolution screens.
+The 2x means that illustration-big.png is for retina screens.
+Older browsers that don’t understand srcset fall back to the src attribute.-->
       <div class='section content'>
         <div class='illustration'>
-          <img src='images/illustration-big.png' style='max-width: 500px'/>
+          <img src='illustration-small.png'
+               srcset='images/illustration-small.png 1x,
+                       images/illustration-big.png 2x'
+               style='max-width: 500px'/>
         </div>
       </div>
 

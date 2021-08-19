@@ -51,11 +51,11 @@ desktop layouts */
 
 .illustration {
   width: 100%;
+  justify-content: center;
 }
 
 .illustration img {
   width: 100%;
-  display: block;
 }
 
 /* Mobile Styles */
