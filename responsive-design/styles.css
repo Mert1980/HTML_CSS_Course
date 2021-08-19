@@ -25,6 +25,10 @@ desktop layouts */
 }
 
 .header {
+  background-color: #B2D6FF;
+}
+
+.header {
   height: auto;
   justify-content: inherit;
   align-items: inherit;
@@ -56,13 +60,9 @@ desktop layouts */
   background-color: #C8C6FA;
 }
 
-.illustration {
-  width: 100%;
-  justify-content: center;
-}
-
 .illustration img {
   width: 100%;
+  display: block;
 }
 
 /* Mobile Styles */
