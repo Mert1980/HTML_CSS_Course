@@ -55,7 +55,8 @@ a:hover {
   cursor: pointer;
 }
 
-.features-menu {
+/* show features-menu if dropdown is hovered */
+.dropdown:hover .features-menu {
   display: flex;
   flex-direction: column;
   background: #B2D6FF;
@@ -67,6 +68,11 @@ a:hover {
   left: -30px;
 
   z-index: 1;
+}
+
+/* hide features menu */
+.features-menu {
+  display: none;
 }
 
 .features-menu li {
