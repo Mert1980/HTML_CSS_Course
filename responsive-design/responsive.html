@@ -11,13 +11,33 @@
     <div class='page'>
 
       <div class='section menu'></div>
+
+<!--
+Conceptually, this is pretty similar to using media queries in CSS.
+In each <source> element, the media attribute defines when the image should be
+loaded, and srcset defines which image file should be loaded. The <img/> element
+is only used as a fallback for older browsers.
+ -->
+      <div class='section header'>
+        <div class='photo'>
+          <picture>
+            <source media='(min-width: 401px)'
+                    srcset='images/photo-big.jpg'/>
+            <source media='(max-width: 400px)'
+                    srcset='images/photo-tall.jpg'/>
+            <img src='images/photo-small.jpg'/>
+          </picture>
+        </div>
+      </div>
+
+<!--
       <div class='section header'>
         <div class='photo'>
 
-          <!--Here, we’re saying that when the screen is at least 960px wide,
+        Here, we’re saying that when the screen is at least 960px wide,
           the image will also be 960 pixels wide. Otherwise, the 100vw default
           value tells the browser that the image’s width will be 100% of the
-          “viewport width” (a fancy term for screen width). -->
+          “viewport width” (a fancy term for screen width).
           <img src='images/photo-small.jpg'
                srcset='images/photo-big.jpg 2000w,
                        images/photo-small.jpg 1000w'
@@ -25,7 +45,7 @@
                       100vw'/>
         </div>
       </div>
-
+-->
 <!-- The srcset attribute points to a list of alternative image files, along with
 properties defining when the browser should use each of them. The 1x tells the
 browser to display illustration-small.png on standard-resolution screens.
