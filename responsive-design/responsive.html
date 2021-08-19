@@ -12,7 +12,18 @@
 
       <div class='section menu'></div>
       <div class='section header'>
-        <img src='images/header.svg'/>
+        <div class='photo'>
+
+          <!--Here, we’re saying that when the screen is at least 960px wide,
+          the image will also be 960 pixels wide. Otherwise, the 100vw default
+          value tells the browser that the image’s width will be 100% of the
+          “viewport width” (a fancy term for screen width). -->
+          <img src='images/photo-small.jpg'
+               srcset='images/photo-big.jpg 2000w,
+                       images/photo-small.jpg 1000w'
+               sizes='(min-width: 960px) 960px,
+                      100vw'/>
+        </div>
       </div>
 
 <!-- The srcset attribute points to a list of alternative image files, along with
