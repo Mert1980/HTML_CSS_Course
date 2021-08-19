@@ -53,6 +53,11 @@ desktop layouts */
   width: 100%;
 }
 
+.illustration img {
+  width: 100%;
+  display: block;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
