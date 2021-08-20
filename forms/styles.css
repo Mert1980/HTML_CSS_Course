@@ -124,6 +124,11 @@ to radio buttons, which are defined by the same HTML element
   margin-bottom: 30px;
 }
 
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+
+
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
   .speaker-form {
@@ -165,5 +170,13 @@ to radio buttons, which are defined by the same HTML element
 
   .form-row .instructions {
     margin-left: 120px;
+  }
+
+/* By wrapping both the checkbox and the label text, we’re able to use a
+width:auto to make the entire form field be on a single line (remember that the
+auto width makes the box match the size of its contents). */
+  .form-row .checkbox-label {
+    margin-left: 120px;
+    width: auto;
   }
 }
