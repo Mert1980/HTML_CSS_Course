@@ -50,6 +50,11 @@ body {
   flex-wrap: wrap;
 }
 
+/* The input[type='text'] part is a new type of CSS selector called an
+“attribute selector”. It only matches <input/> elements that have a type
+attribute equal to text. This lets us specifically target text fields opposed
+to radio buttons, which are defined by the same HTML element
+(<input type='radio'/>).  */
 .form-row input[type='text'] {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
@@ -61,4 +66,26 @@ body {
 
 .form-row label {
   margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-row input[type='text'] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
 }
