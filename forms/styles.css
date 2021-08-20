@@ -100,6 +100,12 @@ to radio buttons, which are defined by the same HTML element
   float: left;
 }
 
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;            /* This won't work in Chrome or Safari */
+}
+
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
   .speaker-form {
