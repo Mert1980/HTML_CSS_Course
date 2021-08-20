@@ -36,6 +36,28 @@ define how the form is submitted to the backend server.  -->
                type='email'
                placeholder='joe@example.com'/>
       </div>
+
+<!--
+Unlike text fields, the user can’t enter custom values into a radio button,
+which is why each one of them needs an explicit value attribute.
+This is the value that will get sent to the server when the user submits the form.
+It’s also very important that each radio button has the same name attribute,
+otherwise the form wouldn’t know they were part of the same group.
+-->
+      <fieldset class='legacy-form-row'>
+        <legend>Type of Talk</legend>
+        <input id='talk-type-1'
+               name='talk-type'
+               type='radio'
+               value='main-stage' />
+        <label for='talk-type-1' class='radio-label'>Main Stage</label>
+        <input id='talk-type-2'
+               name='talk-type'
+               type='radio'
+               value='workshop'
+               checked />
+        <label for='talk-type-2' class='radio-label'>Workshop</label>
+      </fieldset>
     </form>
   </body>
 </html>
